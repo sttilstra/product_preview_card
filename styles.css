@@ -1,0 +1,175 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2ebe3;
+}
+
+
+h1{
+    font-family: Fraunces, serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-top: 0px;
+    line-height: 1em;
+
+}
+
+
+h2 {
+    max-width: fit-content;
+    display: inline;
+    font-family: Fraunces, serif;
+    color: #3c8067;
+    font-weight: 700;
+}
+
+
+
+h3{
+    color:#6c7289;
+    font-size: 0.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    max-width: fit-content;
+    margin-bottom: 1.5em;
+    margin-top: 3em;
+}
+
+
+h4{
+    display: inline;
+    text-decoration: line-through;
+    color:  #6c7289;
+    font-size: 0.7em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+p {
+    color: #6c7289;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    margin-bottom: 0px;
+}
+
+.main_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    overflow: hidden; /* child elements like the image can't overflow the rounded corners. */ 
+    height: 23rem;
+    width: 30rem;      
+    padding-right: 1rem;
+}
+
+
+
+.image_container {
+    display: flex;
+    height: 100%;
+   
+  }
+
+
+
+.ad_info {
+    margin-left: 2em;
+    height: 100%;
+
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c8067;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    height: 100%;
+    border-radius: 0.4em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 0.7em;
+    width: 95%;
+    height: 3.5em;
+    border-radius: 0.5em;
+
+}
+
+.btn:hover{
+    background-color: #1b4133;
+
+}
+.cart_icon{
+    height: 1.2em;
+    margin-right: 1em;
+    
+}
+
+.price_row {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.sale_price {
+    float: none;    
+    margin: 0;           
+}
+
+
+/* MOBILE FORMATTING SECTION */
+
+@media (max-width: 480px) {
+    .main_container {
+        flex-direction: column;
+        width: 75vw;
+        height: auto;
+        padding: 0;
+    }
+
+    h3{
+        margin-top: 0;
+    }
+
+    h2 {
+        margin-bottom: 0px;
+    }
+
+h4{
+    
+}
+    .image_container {
+        width: 100%;
+        height: 15em;
+    }
+
+    .desktop_image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ad_info {
+        padding-top: 2vh;
+        width: 100%;
+        height: auto;
+    
+    }
+
+    .btn{
+        width: 90%;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+}
