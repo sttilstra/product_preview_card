@@ -172,4 +172,14 @@ h4{
         margin-bottom: 2em;
     }
 
+
+    .price_row{
+        display: flex;
+    }
+
+    .sale_price{
+       margin-top: 1.1em;
+    }
+
+
 }
